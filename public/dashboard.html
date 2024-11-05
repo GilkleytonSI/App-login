@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="dashboard-container">
+    <h2>Bem-vindo ao Dashboard</h2>
+    <p id="welcomeMessage"></p>
+    <button id="logoutButton">Sair</button>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const welcomeMessage = document.getElementById('welcomeMessage');
+      welcomeMessage.textContent = 'Bem-vindo! Você está logado.';
+
+      document.getElementById('logoutButton').addEventListener('click', async function() {
+        const response = await fetch('/logout', { method: 'POST' });
+        const data = await response.json();
+        if (data.success) {
+          window.location.href = '/';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

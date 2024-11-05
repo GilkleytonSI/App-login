@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sistema de Login</title>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Usuário</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Senha</label>
+      <input type="password" id="password" required>
+
+      <label for="role">Função</label>
+      <select id="role" required>
+        <option value="aluno">Aluno</option>
+        <option value="professor">Professor</option>
+      </select>
+
+      <button type="submit">Entrar</button>
+    </form>
+    <p id="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

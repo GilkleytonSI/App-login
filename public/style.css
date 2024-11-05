@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 350px; /* Define uma largura máxima para o formulário */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center; /* Centraliza o conteúdo do formulário */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Alinha os textos à esquerda */
+  }
+  
+  input, select, button {
+    width: 100%; /* Todos os elementos ocupam 100% da largura do container */
+    padding: 10px; /* Espaçamento interno dos elementos */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #message {
+    color: red;
+    margin-top: 10px;
+  }
+  
